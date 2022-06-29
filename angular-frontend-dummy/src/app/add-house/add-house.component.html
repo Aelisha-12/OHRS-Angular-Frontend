@@ -1,0 +1,39 @@
+<div class="container col-5">
+    <br>
+    <h3 class="text-center"> Add House </h3>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="houseImage">House Image</label>
+        <input type="file" class="form-control" id="houseImage" aria-describedby="houseImage" [(ngModel)]="house.houseImage" name="house-image">
+      </div>
+    <div class="form-group">
+      <label for="houseName">House Name</label>
+      <input type="text" class="form-control" id="houseName" aria-describedby="houseName" placeholder="Enter House Name" [(ngModel)]="house.houseName" name="house-name">
+    </div>
+    <div class="form-group">
+        <label for="houseAddress">House Address</label>
+        <input type="text" class="form-control" id="houseAddress" aria-describedby="houseAddress" placeholder="Enter House Address" [(ngModel)]="house.houseAddress" name="house-address">
+    </div>
+    <div class="form-group">
+        <label for="houseRent">House Rent</label>
+        <input type="text" class="form-control" id="houseRent" aria-describedby="houseRent" placeholder="Enter House Rent" [(ngModel)]="house.houseRent" name="house-rent">
+    </div>
+    <div class="form-group">
+        <label for="houseContactno">Contact No</label>
+        <input type="text" class="form-control" id="houseContactno" aria-describedby="houseContactno" placeholder="Your Contact No" [(ngModel)]="house.houseContactno" name="house-contactno">
+    </div>
+    <div class="form-group">
+        <label for="houseType">House Type</label>
+        <input type="text" class="form-control" id="houseType" aria-describedby="houseType" placeholder="Enter House Type" [(ngModel)]="house.houseType" name="house-type">
+    </div>
+    <div class="form-group">
+        <label for="houseDescription">House Description</label>
+        <textarea id="houseDescription" class="form-control" aria-describedby="houseDescription" placeholder="Enter House Description" [(ngModel)]="house.houseDescription" name="house-description"></textarea>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="addHouse()">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset" class="btn btn-primary">Cancel</button>
+    <br>
+  </form>
+</div>

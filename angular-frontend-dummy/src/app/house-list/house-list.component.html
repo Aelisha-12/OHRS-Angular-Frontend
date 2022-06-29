@@ -1,0 +1,30 @@
+<div class="container">
+    <br>
+        <h3 style="text-align: center;">List of Houses</h3>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">House ID</th>
+        <th scope="col">House Name</th>
+        <th scope="col">House Address</th>
+        <th scope="col">House Description</th>
+        <th scope="col">Contact No</th>
+        <th scope="col">House Rent</th>
+        <th scope="col">House Type</th>
+        <th scope="col">House Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let h of house">
+        <th scope="row">{{h.houseId}}</th>
+        <td>{{h.houseName}}</td>
+        <td>{{h.houseAddress}}</td>
+        <td>{{h.houseDescription }}</td>
+        <td>{{h.houseContactno}}</td>
+        <td>{{h.houseRent}}</td>
+        <td>{{h.houseType}}</td>
+        <td><img src="data:image/png;base64,{{h.houseImage}}" class="rounded-circle" width="45" height="45"></td>
+      </tr>
+    </tbody>
+</table>
+</div>
