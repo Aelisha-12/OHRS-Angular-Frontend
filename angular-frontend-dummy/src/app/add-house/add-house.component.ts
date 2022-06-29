@@ -33,7 +33,7 @@ export class AddHouseComponent implements OnInit {
       }
     })
   }*/
-
+ // add house by this
   addHouse(){
     console.log(this.house);
     this.houseService.addHouse().subscribe();
