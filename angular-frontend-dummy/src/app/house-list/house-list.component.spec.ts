@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HouseListComponent } from './house-list.component';
 
+//changes
+
 describe('HouseListComponent', () => {
   let component: HouseListComponent;
   let fixture: ComponentFixture<HouseListComponent>;
