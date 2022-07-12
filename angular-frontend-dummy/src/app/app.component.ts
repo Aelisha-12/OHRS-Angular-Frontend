@@ -28,6 +28,7 @@ export class AppComponent {
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
       this.showOwnerBoard = this.roles.includes('ROLE_OWNER');
       this.showHouseDetails = this.roles.includes('ROLE_OWNER');
+      this.showHouseDetails = this.roles.includes('ROLE_CUSTOMER');
 
       this.username = user.username;
     }
